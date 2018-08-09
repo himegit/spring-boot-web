@@ -11,8 +11,7 @@ public class HelloController extends BaseController{
 
     @RequestMapping("/")
     public String index(ModelMap map, HttpServletRequest request) {
-        map.addAttribute("message", request.getLocalName()+":"+request.getLocalPort());
-        return "hello";
+        return "index";
     }
 
 }

@@ -2,13 +2,25 @@
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8"></meta>
-    <title>Index</title>
-    <script src="./js/bootstrap.min.js"/>
+    <title>登录</title>
     <link rel="stylesheet" href="./css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="./css/fontawesome.css"/>
+    <script src="./js/bootstrap.min.js"/>
+    <script src="./js/fontawesome.js"/>
+    <style>
+        .body-container {
+            background-image: url("./img/index.jpg");
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            -moz-background-size: 100% 100%;
+            background-attachment: fixed;
+            height:100%;
+        }
+    </style>
 </head>
-<body>
-    <div th:include="layout/copyright :: copyright"></div>
-    <div th:replace="layout/copyright :: copyright"></div>
-    <button class="btn btn-info">aaa</button>
+<body class="body-container">
+    <div class="shadow p-3 mb-5 bg-white rounded align-middle" style="position: absolute;top: 50%;width:80%;margin-left: 10%">
+        Regular shadow
+    </div>
 </body>
 </html>
