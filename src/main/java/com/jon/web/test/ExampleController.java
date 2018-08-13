@@ -1,6 +1,7 @@
-package com.jon.web;
+package com.jon.web.test;
 
 import com.jon.domain.User;
+import com.jon.web.common.BaseController;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -10,7 +11,7 @@ import java.util.Date;
 import java.util.List;
 
 @Controller
-public class ExampleController extends BaseController{
+public class ExampleController extends BaseController {
 
     @RequestMapping("/example")
     public String index(ModelMap map) {

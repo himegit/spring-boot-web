@@ -1,4 +1,5 @@
-package com.jon.web;
+package com.jon.web.common;
+
 
 public class BaseController {
 

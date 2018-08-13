@@ -4,9 +4,10 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.jon</groupId>
-	<artifactId>spring-boot-thymeleaf</artifactId>
+	<artifactId>globalShopping</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>war</packaging>
+
 
 	<name>spring-boot-thymeleaf</name>
 	<description>Demo project for Spring Boot</description>
@@ -59,6 +60,14 @@
 				<artifactId>spring-boot-maven-plugin</artifactId>
 				<configuration>
 					<fork>true</fork>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-war-plugin</artifactId>
+				<version>2.6</version>
+				<configuration>
+					<warName>globalShopping</warName>
 				</configuration>
 			</plugin>
 		</plugins>
