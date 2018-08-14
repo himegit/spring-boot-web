@@ -26,11 +26,11 @@
             width:80%;
             margin-left: 10%
         }
-        .header-note{
+        .from-align{
             position: absolute;
             top: 20%;
-            width:80%;
-            margin-left: 10%
+            width:60%;
+            margin-left: 20%
         }
 
         @media only screen and (max-width: 500px) {
@@ -42,7 +42,7 @@
                 background-attachment: fixed;
                 height:100%;
             }
-            .header-note{
+            .from-align{
                 position: absolute;
                 top: 20%;
                 width:94%;
@@ -60,7 +60,37 @@
     </style>
 </head>
 <body class="body-container">
-<div class="jumbotron shadow p-3 mb-5 rounded align-middle text-center header-note">
+<div class="shadow p-3 mb-5 bg-white rounded align-middle from-align">
+    <form>
+        <div class="form-group">
+            <label for="exampleFormControlInput1">商品名称</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="详细商品名称" />
+        </div>
+        <div class="form-group">
+            <label for="count">数量</label>
+            <select class="form-control" id="count">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="type">类型</label>
+            <select class="form-control" id="type">
+                <option>化妆品</option>
+                <option>药品</option>
+                <option>生活用品</option>
+                <option>其他</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="exampleFormControlTextarea1">备注</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div>
+        <div class="form-group text-center">
+            <a class="btn btn-outline-success" style="width:50%">提交</a>
+        </div>
+    </form>
 </div>
 </body>
 </html>

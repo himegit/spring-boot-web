@@ -8,14 +8,19 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 public class IndexController extends BaseController {
 
-    @RequestMapping("/index")
+    @GetMapping(value = {"/","/homePage"})
     public String index() {
-        return "index";
+        return "/homePage";
     }
 
     @GetMapping("/reserve")
     public String reserveCommodity(){
         return "reserveCommodity";
+    }
+
+    @GetMapping("/visittoonuch")
+    public String visittoonuch(){
+        return "error/visittoonuch";
     }
 
     @RequestMapping("/layout")
