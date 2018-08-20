@@ -6,8 +6,8 @@ import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.web.servlet.ServletComponentScan;
 import org.springframework.boot.web.support.SpringBootServletInitializer;
 
-@SpringBootApplication
-@ServletComponentScan
+@SpringBootApplication(scanBasePackages = {"com.jon"})
+@ServletComponentScan(basePackages = {"com.jon"})
 public class ThymeleafApplication extends SpringBootServletInitializer {
 
 	@Override
